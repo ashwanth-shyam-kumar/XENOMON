@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="14" height="16" tilewidth="64" tileheight="64" infinite="0" nextlayerid="10" nextobjectid="13">
+ <tileset firstgid="1" source="../Graphics/indoor.tsx"/>
+ <layer id="1" name="terrain" width="14" height="16">
+  <data encoding="csv">
+1,2,2,2,2,2,2,2,2,2,2,2,2,3,
+11,12,12,12,12,12,12,12,12,12,12,12,12,43,
+11,12,12,24,25,12,12,12,12,24,25,12,12,43,
+11,22,22,34,35,22,22,22,22,34,35,22,22,43,
+11,5,5,5,5,5,5,5,5,5,5,5,5,43,
+11,5,5,5,5,5,5,5,5,5,5,5,5,43,
+11,5,5,5,5,5,5,5,5,5,5,5,5,43,
+11,5,5,5,5,5,5,5,5,5,5,5,5,43,
+11,5,5,5,5,5,5,5,5,5,5,5,5,43,
+11,5,5,5,5,5,5,5,5,5,5,5,5,43,
+11,5,5,5,5,5,5,5,5,5,5,5,5,43,
+11,5,5,5,5,5,5,5,5,5,5,5,5,43,
+11,5,5,5,5,5,5,5,5,5,5,5,5,43,
+11,5,5,5,5,5,5,5,5,5,5,5,5,43,
+11,5,5,5,5,5,5,5,5,5,5,5,5,43,
+51,52,52,52,52,52,14,15,52,52,52,52,52,53
+</data>
+ </layer>
+ <layer id="2" name="terrain top" width="14" height="16">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,73,0,0,0,0,0,0,
+0,0,0,0,0,0,0,73,0,0,0,0,0,0,
+0,0,0,0,0,0,0,73,0,0,0,0,0,0,
+0,0,0,0,0,0,0,73,0,0,0,0,0,0,
+0,82,82,82,0,0,82,83,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="3" name="entities">
+  <object id="1" name="character" x="320" y="576">
+   <properties>
+    <property name="character_id" value="Nurse"/>
+    <property name="direction" value="down"/>
+    <property name="graphic" value="purple_girl"/>
+    <property name="radius" value="0"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="2" name="player" x="449" y="871">
+   <properties>
+    <property name="direction" value="up"/>
+    <property name="pos" value="world"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="4" name="coast"/>
+ <objectgroup id="5" name="water"/>
+ <objectgroup id="6" name="monsters"/>
+ <objectgroup id="7" name="collisions">
+  <object id="5" x="832" y="0" width="64" height="960"/>
+  <object id="6" x="0" y="0" width="832" height="64"/>
+  <object id="7" x="0" y="64" width="64" height="960"/>
+  <object id="8" x="64" y="960" width="832" height="64"/>
+  <object id="9" x="64" y="192" width="768" height="64"/>
+  <object id="10" x="448" y="256" width="64" height="320"/>
+  <object id="11" x="64" y="512" width="192" height="64"/>
+  <object id="12" x="384" y="512" width="64" height="64"/>
+ </objectgroup>
+ <objectgroup id="8" name="objects"/>
+ <objectgroup id="9" name="transition">
+  <object id="4" x="391" y="950" width="121" height="11">
+   <properties>
+    <property name="pos" value="hospital1"/>
+    <property name="target" value="world"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

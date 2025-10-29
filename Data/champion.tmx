@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="10" height="10" tilewidth="64" tileheight="64" infinite="0" nextlayerid="10" nextobjectid="9">
+ <tileset firstgid="1" source="../Graphics/indoor.tsx"/>
+ <layer id="1" name="terrain" width="10" height="10">
+  <data encoding="csv">
+1,2,2,2,2,2,2,2,2,3,
+11,12,12,12,12,12,12,12,12,43,
+11,22,22,22,22,22,22,22,22,43,
+11,32,32,32,32,32,32,32,32,43,
+11,42,42,42,42,42,42,42,42,43,
+11,42,42,42,42,42,42,42,42,43,
+11,42,42,42,42,42,42,42,42,43,
+11,42,42,42,42,42,42,42,42,43,
+11,42,42,42,42,42,42,42,42,43,
+51,52,52,52,14,15,52,52,52,53
+</data>
+ </layer>
+ <layer id="3" name="terrain top" width="10" height="10">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="9" name="entities">
+  <object id="2" name="player" x="323" y="518">
+   <properties>
+    <property name="direction" value="up"/>
+    <property name="pos" value="world"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="3" name="character" x="322" y="264">
+   <properties>
+    <property name="character_id" value="c1"/>
+    <property name="direction" value="down"/>
+    <property name="graphic" value="fire_boss"/>
+    <property name="radius" value="200"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="2" name="coast"/>
+ <objectgroup id="4" name="water"/>
+ <objectgroup id="5" name="monsters"/>
+ <objectgroup id="6" name="collisions">
+  <object id="4" x="0" y="0" width="640" height="64"/>
+  <object id="5" x="576" y="64" width="64" height="576"/>
+  <object id="6" x="0" y="576" width="576" height="64"/>
+  <object id="7" x="0" y="64" width="64" height="512"/>
+  <object id="8" x="64" y="128" width="512" height="64"/>
+ </objectgroup>
+ <objectgroup id="7" name="objects"/>
+ <objectgroup id="8" name="transition">
+  <object id="1" x="263" y="566" width="116" height="11">
+   <properties>
+    <property name="pos" value="champion"/>
+    <property name="target" value="world"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>
